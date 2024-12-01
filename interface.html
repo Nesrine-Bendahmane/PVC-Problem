@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problème du Voyageur de Commerce (PVC)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>Résolution du problème du Voyageur de Commerce (PVC)</h1>
+
+    <form id="graph-form">
+      <label for="nodes">Nombre de villes (n) :</label>
+      <input type="number" id="nodes" name="nodes" min="2" required />
+
+      <button type="button" id="generateEdges">Générer les arêtes</button>
+
+      <div id="edges-container"></div>
+
+      <button type="submit">Calculer le cycle Hamiltonien</button>
+    </form>
+
+    <div id="results"></div>
+
+    <!-- Section pour afficher le temps d'exécution -->
+    <div id="execution-time">
+      <h2>Temps d'exécution :</h2>
+      <p id="time">En attente...</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
